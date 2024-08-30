@@ -2,6 +2,7 @@
 import { Link, useNavigate } from 'react-router-dom'
 import { useContext } from 'react'
 import { UserContext } from '../../context/UserContext/UserState'
+import { ShoppingCartOutlined } from '@ant-design/icons'
 
 function TheHeader() {
 	const navigate = useNavigate()
@@ -24,6 +25,10 @@ function TheHeader() {
 						<Link to="/">Logout</Link>
 					</button>
 					<Link to="/profile">Profile</Link>
+					<Link to="/products">Products</Link>
+					<Link to="/cart">
+						<ShoppingCartOutlined />
+					</Link>
 				</>
 			) : (
 				<Link to="/">Login</Link>

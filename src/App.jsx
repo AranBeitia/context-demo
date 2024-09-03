@@ -3,6 +3,7 @@ import Login from './components/Login/Login'
 import Profile from './components/Profile/Profile'
 import Products from './components/Products/Products'
 import Cart from './components/Cart/Cart'
+import Admin from './components/Admin/Admin'
 import TheHeader from './components/TheHeader/TheHeader'
 import { UserProvider } from './context/UserContext/UserState'
 import { ProductsProvider } from './context/ProductsContext/ProductsState'
@@ -20,6 +21,7 @@ function App() {
 							<Route path="/profile" element={<Profile />} />
 							<Route path="/products" element={<Products />} />
 							<Route path="/cart" element={<Cart />} />
+							<Route path="/admin" element={<Admin />} />
 						</Routes>
 					</Router>
 				</OrdersProvider>
